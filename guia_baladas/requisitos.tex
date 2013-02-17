@@ -1,0 +1,85 @@
+% \hypertarget{lugar1}{palavra}.
+% \href{url}{texto}
+
+\chapter{Requisitos}
+\section{Requisitos Funcionais}
+
+\subsection{\label{req:eventos}Eventos}
+
+Nesse tipo se incluem festas, datas festivas, shows, podendo ser casual 
+%ou acontecer de tempos em tempos
+. O sistema permitirá a inserção, alteração e exclusão de deste.
+
+\subsection{\label{req:restaurante} Restaurante}
+
+Muitos lugares podem ser ou possuem um ou mais restaurantes, e cada restaurante possui um cardapio com preços e ocasião. O sistema permitirá a inserção, alteração e exclusão de deste.
+
+\subsection{\label{req:lugar}Lugar}
+
+Lugar inclui tudo que pode ser visitado. O sistema permitirá a inserção, alteração e exclusão de deste contendo: 
+
+\begin{enumerate}
+	  \item Nome
+	  \item Descrição
+%	  \item \ref{req:atividade}Atividade
+	  \item Horário de funcionamento
+	  \item Dias de funcionamento
+%	  \item Temporada de funcionamento
+\end{enumerate}
+
+Sendo que um lugar pode conter outros dentro deste, como é o caso dos shoppings centers que possuem restaurantes, cinemas, lojas de compras etc.
+
+%\subsection{\label{req:tag} Tags}
+
+%Os lugares poderão ser adicionados tags para melhor acha-los depois. O sistema permitirá a inserção, alteração e exclusão de deste.
+
+%\subsection{\label{req:atividade} Atividade}
+
+%Atividade é o que pode ser feito nos lugares, por exemplo, assistir filme, assistir teatro, fazer compras, passear, visitar etc.
+
+%Todos os lugares possuem um ou mais atividades. O sistema permitirá inserção, alteração e exclusão atividades contendo: 
+
+\begin{enumerate}
+	  \item Nome
+	  \item Descrição
+\end{enumerate}
+
+\subsection{\label{req:roteiro} Roteiro}
+
+O Roteiro é a representação do que o usuário ira fazer no dia, por exemplo, assistir um filme, comer um lanche e fazer um passeio panoramico o sistema permitirá ao usuário selecionar. O sistema permitirá inserção, alteração e exclusão de roteiros contendo: 
+
+\begin{enumerate}
+	  \item Nome
+	  \item Descrição
+	  \item Data
+	 % \item \ref{req:atividade}Atividade
+	  \item \ref{req:lugar}Lugar
+\end{enumerate}
+
+\subsection{\label{req:cartaz} Em Cartaz}
+
+Existem lugares que possuem coisas para assistir isso inclui cinemas e teatros. Essas coisas em cataz tem uma tratamento especial, pois os mesmos deverão ser expostos mostrando onde será o lugar que estará em capaz em determinada data. O sistema permitirá a inserção, alteração e exclusão de deste.
+
+\subsection{\label{req:mapa} Mapa}
+
+Os lugares poderão ser visualizados no Google Maps.
+
+\subsection{\label{req:agenda} Agenda}
+
+Os lugares poderão ser visualizados no Google Calendar.
+
+\subsection{\label{req:planejar} Planejar Fim de Semana}
+
+ O sistema permitirá o planejamento do fim de semana definindo o que será feito no fim de semana.
+
+\subsection{\label{req:marcar} Marcar Passeio}
+
+O sistema permitirá definir passeios a serem feitos e estes serem agendados em seguida. Dessa forma o sistema deverá saber quais passeios estão marcados para o ano, mês, semana ou dia.
+
+\subsection{\label{req:chegar} Como chegar}
+
+O sistema deverá mostrar o caminho para chegar ao lugar desejado.
+
+\subsection{\label{req:gastar} Quando gastar}
+
+O sistema deverá mostrar o quanto o usuário irá gastar na programação escolhida.

@@ -1,0 +1,4 @@
+objetivo:
+Desenvolver rotas de passeios e saidas dinâmico, de fácil acesso e entendimento.
+Visão:
+Ao chegar o final de semana poder escolher entre os melhores lugares para ir de forma simples e abrangente. Escolher restaurantes para as mais diversas situações e tudo mais.

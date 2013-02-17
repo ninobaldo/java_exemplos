@@ -1,0 +1,28 @@
+\documentclass[a4paper,10pt]{book}
+\usepackage[brazil]{babel}
+\usepackage[latin1]{inputenc}
+\usepackage[dvips]{graphicx}
+\usepackage{latexsym}
+\usepackage{psfrag}
+\usepackage[center]{caption2}
+\usepackage{fancyhdr}
+\usepackage[pdftex]{hyperref}
+
+\title{Servidor Linux}
+\author{Álvaro Rios}
+% inicio do trabalho com o latex \date{Janeiro de 2012}
+\date{\today}
+
+% \pagestyle{fancy}
+%   \lhead{}
+%   \chead{}
+%   \rhead{\leftmark}
+%   \lfoot{}
+%   \cfoot{\thepage}
+%   \rfoot{}
+
+\begin{document}
+\frontmatter  
+  \tableofcontents
+\mainmatter  
+\end{document}

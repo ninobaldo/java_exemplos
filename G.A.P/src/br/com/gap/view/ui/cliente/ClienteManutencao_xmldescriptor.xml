@@ -1,0 +1,9 @@
+
+<beanDescriptor>
+    <line>
+        <property name='nome' columnSize='50'/>
+    </line>
+    <line>
+        <property name='documento' columnSize='50'/>
+    </line>
+</beanDescriptor>

@@ -1,0 +1,8 @@
+
+<beanDescriptor>
+    <line>
+        <property name='hora' label='Horário' readOnly='true' format='HH:mm' />
+        <property name='situacao' label='Situação' readOnly='true' />
+        <property name='isOcupado' label='Disponível?' readOnly='true' />
+    </line>
+</beanDescriptor>

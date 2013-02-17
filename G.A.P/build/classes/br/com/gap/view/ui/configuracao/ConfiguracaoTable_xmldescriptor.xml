@@ -1,0 +1,10 @@
+
+<beanDescriptor>
+    <line>
+        <property name='inicioExpediente' label='Início do Expediente' readOnly='true' format='HH:mm'/>
+        <property name='fimExpediente' label='Fim do Expediente' readOnly='true' format='HH:mm'/>
+        <property name='periodoBaseMinutos' type='integer' label='Período Base (min)' readOnly='true'/>
+        <property name='vigencia' label='Vigência' readOnly='true'/>
+        <property name='diaSemanaExtenso' label='Dia da semana' readOnly='true'/>
+    </line>
+</beanDescriptor>

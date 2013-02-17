@@ -1,0 +1,7 @@
+
+<beanDescriptor>
+    <line>
+        <property name='telefone' label='Telefone' type='INTEGER' readOnly='true' />
+        <property name='descricao' label='Descricao' readOnly='true' />
+    </line>
+</beanDescriptor>

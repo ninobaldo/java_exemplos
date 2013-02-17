@@ -1,0 +1,10 @@
+
+<beanDescriptor>
+    <line>
+        <property name='nome'  />
+    </line>
+    <line>
+        <property name='login' />
+        <property name='situacao' comboList='Ativo;Inativo;Novo'/>
+    </line>
+</beanDescriptor>

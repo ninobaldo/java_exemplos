@@ -1,0 +1,9 @@
+
+<beanDescriptor>
+    <line>
+        <property name='login' />
+    </line>
+    <line>
+        <property name='nome'  />
+    </line>
+</beanDescriptor>

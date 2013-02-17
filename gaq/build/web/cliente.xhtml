@@ -1,0 +1,97 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:ui="http://java.sun.com/jsf/facelets"
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:f="http://java.sun.com/jsf/core">
+
+    <h:head>
+        <title>Clientes</title>
+    </h:head>
+
+    <h:body>
+        <hr/>
+
+        <h1>Novos Clientes</h1>
+        <h:form>
+            <h:panelGrid>
+                <h:inputHidden value="#{clienteMB.cliente.id}" />
+
+                <h:outputLabel value="Name:" />
+                <h:inputText value="#{clienteMB.cliente.nome}" />
+
+                <h:commandButton action="#{clienteMB.save()}" value="Salvar" />
+            </h:panelGrid>
+        </h:form>
+        <h1>Telefones</h1>
+        <h:form>
+            <h:panelGrid>
+                <h:panelGrid>
+                    <h:inputHidden value="#{clienteMB.telefone.id}" />
+
+                    <h:outputLabel value="DDD" />
+                    <h:inputText value="#{clienteMB.telefone.ddd}" />
+                    <h:outputLabel value="Número" />
+                    <h:inputText value="#{clienteMB.telefone.numero}" />
+                    <h:outputLabel value="Descricao" />
+                    <h:inputText value="#{clienteMB.telefone.descricao}" />
+
+
+                    <h:commandButton action="#{clienteMB.saveTelefone()}" value="Adicionar Telefone" />
+                </h:panelGrid>
+                <h:panelGrid>
+                    <h:dataTable value="#{clienteMB.cliente.telefones}" var="t">
+                        <h:column>
+                            <f:facet name="header">Id</f:facet>
+                            #{t.id}
+                        </h:column>
+                        <h:column>
+                            <f:facet name="header">DDD</f:facet>
+                            #{t.ddd}
+                        </h:column>
+                        <h:column>
+                            <f:facet name="header">Número</f:facet>
+                            #{t.numero}
+                        </h:column>
+                        <h:column>
+                            <f:facet name="header">Descrição</f:facet>
+                            #{t.descricao}
+                        </h:column>
+                    </h:dataTable>
+                </h:panelGrid>
+            </h:panelGrid>
+        </h:form>
+
+        <hr/>
+
+        <h1>Lista de Clientes</h1>
+        <h:dataTable value="#{clienteMB.clientes}" var="c"
+                     rendered="#{not empty clienteMB.clientes}" border="1">
+
+            <h:column>
+                <f:facet name="header">Id</f:facet>
+                #{c.id}
+            </h:column>
+
+            <h:column>
+                <f:facet name="header">Nome</f:facet>
+                #{c.nome}
+            </h:column>
+
+            <!-- alteração -->
+            <h:column>
+                <f:facet name="header">Delete</f:facet>
+                <h:form>
+                    <h:commandLink action="#{clienteMB.delete(c)}" >delete</h:commandLink>
+                </h:form>
+            </h:column>
+            <h:column>
+                <f:facet name="header">Edit</f:facet>
+                <h:form>
+                    <h:commandLink action="#{clienteMB.prepareEdit(c.id)}">edit</h:commandLink>
+                </h:form>
+            </h:column>
+        </h:dataTable>
+    </h:body>
+</html>

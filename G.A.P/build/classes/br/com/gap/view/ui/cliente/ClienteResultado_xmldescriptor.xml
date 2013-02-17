@@ -1,0 +1,9 @@
+
+<beanDescriptor>
+    <line>
+        <property name='nome' label='Nome' readOnly='true' />
+    </line>
+    <line>        
+        <property name='documento' label='Documento' readOnly='true' />
+    </line>
+</beanDescriptor>
